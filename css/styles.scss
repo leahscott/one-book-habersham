@@ -115,3 +115,44 @@ p {
 		background-color: #fff;
 	}
 }
+
+#twitter-container {
+	padding: 0 50px;
+
+	img {
+		display: none;
+	}
+
+	li {
+		padding-left: 100px;
+		margin: 60px 0;
+		position: relative;
+
+		&:before {
+			content: "\f099";
+			font-family: 'FontAwesome';
+			position: absolute;
+			font-size: 25px;
+			left: 20px; top: 19px;
+		}
+
+		&:after {
+			content: '';
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 0; top: 0;
+			border: 1px solid;
+			border-radius: 50%;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #da635d;
+	}
+
+	p {
+		padding: 0;
+	}
+}
