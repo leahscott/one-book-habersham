@@ -1,0 +1,117 @@
+@import 'reset.css';
+@import 'jeet';
+
+html {
+	font: 400 16px/1.6 'Gentium Book Basic', serif;
+	color: #222;
+}
+
+p {
+	font: 400 16px/24px 'gentium book basic';
+	padding-bottom: 20px;
+}
+
+.hero-full {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url('/img/library.jpeg') no-repeat;
+	background-position: cover;
+	background-size: cover;
+
+	.content-area {
+		background: #dcd0c0;
+		position: absolute;
+		width: 33%;
+		top: 0;
+		bottom: 0;
+		text-align: center;
+	}
+
+	.logo {
+		position: relative;
+		top: 40vh;
+		max-width: 250px;
+	}
+}
+
+.margin-container {
+	max-width: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.page-section {
+	padding: 100px 20px;
+}
+
+.section-title {
+	font-size: 40px;
+	font-style: italic;
+	text-align: center;
+
+	strong {
+		font: 800 54px/1.2 'Open Sans', sans-serif;
+		display: block;
+		text-transform: uppercase;
+	}
+}
+
+#about .margin-container {
+	text-align: center;
+}
+
+.author {
+	font: 800 17px/1.2 'Open Sans', sans-serif;
+	overflow: hidden;
+	text-transform: uppercase;
+	margin: 20px 0;
+	display: block;
+	text-align: center;
+
+	span {
+		position: relative;
+		display: inline-block;
+
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 500%;
+			height: 1px;
+			background-color: #222;
+		}
+
+		&:before {
+			right: 100%;
+			margin-right: 1em;
+		}
+
+		&:after {
+			left: 100%;
+			margin-left: 1em;
+		}
+	}
+}
+
+.content-row {
+	@include cf();
+	padding: 30px 0;
+}
+
+.col-1of2 {
+	@include col(1/2);
+	text-align: left;
+}
+
+#twitter {
+	background-color: #4e4e56;
+	color: white;
+
+	.author span:before,
+	.author span:after {
+		background-color: #fff;
+	}
+}
