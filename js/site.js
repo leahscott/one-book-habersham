@@ -1,3 +1,4 @@
+/* Twitter Feed */
 var config = {
   "id": '678795546287579142',
   "domId": 'twitter-container',
@@ -9,5 +10,9 @@ var config = {
   "showRetweet": false,
   "showInteraction": false
 };
-
 twitterFetcher.fetch(config);
+
+/* Loader */
+$('html').imagesLoaded( function() {
+	$('#loader').addClass('is-ready');
+});
