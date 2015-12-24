@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import '_colors';
 @import 'jeet';
 
 html {
@@ -19,15 +20,6 @@ p {
 	background-position: cover;
 	background-size: cover;
 
-	.content-area {
-		background: #dcd0c0;
-		position: absolute;
-		width: 33%;
-		top: 0;
-		bottom: 0;
-		text-align: center;
-	}
-
 	.logo {
 		position: relative;
 		top: 40vh;
@@ -35,10 +27,62 @@ p {
 	}
 }
 
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	&.top {
+		text-align: center;
+		width: 33%;
+		background: $grey;
+		z-index: 5;
+	}
+
+	&.red {
+		background: $red;
+		width: 34.5%;
+		z-index: 2;
+	}
+
+	&.brown {
+		background: $brown;
+		width: 34%;
+		z-index: 3;
+	}
+
+	&.black {
+		background: $slate;
+		width: 33.5%;
+		z-index: 4;
+	}
+}
+
 .margin-container {
 	max-width: 750px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.btn {
+	background: $red;
+	font-family: 'Open Sans';
+	color: white;
+	border: none;
+	text-decoration: none;
+	outline: none;
+	padding: 13px 25px;
+	border-radius: 2px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	display: inline-block;
+	transition: background 0.1s;
+
+	&:hover {
+		background: lighten($red, 5%);
+	}
 }
 
 .page-section {
@@ -107,7 +151,7 @@ p {
 }
 
 #twitter {
-	background-color: #4e4e56;
+	background-color: $slate;
 	color: white;
 
 	.author span:before,
@@ -149,10 +193,75 @@ p {
 
 	a {
 		text-decoration: none;
-		color: #da635d;
+		color: $red;
 	}
 
 	p {
 		padding: 0;
 	}
+}
+
+#storyteller {
+	background: $slate;
+	color: white;
+	//text-shadow: 1px 1px #777;
+
+	.author span:before,
+	.author span:after {
+		background-color: white;
+	}
+
+	.storyteller-content {
+		padding-top: 50px;
+	}
+
+	img {
+		@include col(1/2);
+	}
+
+	.storyteller-copy {
+		text-shadow: none;
+	}
+
+	.storyteller-copy p a {
+		color: $red;
+		text-decoration: none;
+		border-bottom: 2px solid;
+	}
+}
+
+#sponsors {
+
+	.section-title {
+		padding-bottom: 60px;
+	}
+
+	.sponsor-list {
+		@include cf();
+	}
+
+	.sponsor {
+		margin-bottom: 40px;
+		position: relative;
+		@include col(1/2, $cycle: 2);
+
+		span {
+			margin-left: 60px;
+			display: inline-block;
+			line-height: 1.5;
+		}
+	}
+
+	.fa-certificate {
+		color: $red;
+		font-size: 45px;
+		position: absolute;
+		top: 50%; left: 0%;
+		transform: translateY(-50%);
+	}
+
+}
+
+#disqus_thread {
+	padding-top: 50px;
 }
