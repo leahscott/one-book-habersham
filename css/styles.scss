@@ -194,6 +194,37 @@ em {
 		left: 50%;
 		transform: translateX(-50%);
 	}
+
+	.book-cta {
+		background: lighten($slate, 10%);
+		color: white;
+		padding: 40px 50px;
+		border-radius: 3px;
+		position: relative;
+
+		p {
+			padding-bottom: 0;
+		}
+
+		h2 {
+			font-size: 25px;
+			font-style: italic;
+			padding-bottom: 20px;
+			text-align: center;
+			text-shadow: 1px 1px lighten(black, 20%);
+			letter-spacing: 0.5px;
+		}
+
+		h2:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 50px;
+			margin: 0 auto;
+			background: white;
+			margin-top: 20px;
+		}
+	}
 }
 
 #twitter {
@@ -281,8 +312,8 @@ em {
 
 #sponsors {
 
-	.section-title {
-		padding-bottom: 60px;
+	.content-row {
+		padding: 60px 0 0;
 	}
 
 	.sponsor-list {
