@@ -310,6 +310,67 @@ em {
 	}
 }
 
+.events-list li:last-child {
+	margin-bottom: 0;
+}
+
+.event {
+	display: block;
+	background: url('../img/event-decoration.png') no-repeat center 20px,
+				white;
+	background-size: 250px;
+	border-radius: 2px;
+	font-family: 'Pinyon Script', cursive;
+	text-align: center;
+	color: #222;
+	padding: 100px 100px 50px;
+	margin-bottom: 40px;
+	position: relative;
+
+	small {
+		font-size: 30px;
+		margin-bottom: 16px;
+		margin-top: 30px;
+		display: block;
+	}
+
+	h2 {
+		font-size: 70px;
+		padding-bottom: 30px;
+	}
+
+	p {
+		padding-bottom: 30px;
+	}
+
+	&:before, &:after {
+	  display: block;
+	  position: absolute;
+	  width: 40px;
+	  height: 40px;
+	  top: 0;
+	  right: 0;
+	  box-sizing: border-box;
+	  content: "";
+	}
+
+	&:before {
+	  border-top: solid 20px $slate;
+	  border-right: solid 20px $slate;
+	  border-left: solid 20px transparent;
+	  border-bottom: solid 20px transparent;
+	}
+
+	&:after {
+	  border-bottom: solid 20px darken(white, 12%);
+	  border-left: solid 20px darken(white, 12%);
+	  border-right: solid 20px transparent;
+	  border-top: solid 20px transparent;
+	  border-radius: 0 0 0 2px;
+	  box-shadow: -1px 1px 4px #777
+	}
+}
+
 #sponsors {
 
 	.content-row {
