@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>One Book Habersham</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800,600,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
@@ -99,31 +99,101 @@
 			When's it
 			<strong>Happening?</strong>
 		</h1>
-		<small class="author"><span>Upcomming Events</span></small>
+		<small class="author"><span>Upcoming Events</span></small>
 		<div class="content-row">
-			<ul class="events-list">
+			<div class="post-card public">
+				<div class="post-card-inner">
+					<h1>Public Events</h1>
+				</div>
+			</div>
+			<ul class="event-list">
 				<li class="event">
-					<div class="event-inner">
-						<small>Dear Reader,</small>
-						<h2>You Are Invited</h2>
-						<p class="event-description">Come join us for a spirited reading of <em>Three Hens and a Peacock</em> at your local library. No one should miss out on the oppertunity to see this legendary storyteller in action. So come on down and join the party!</p>
-						<p class="event-details">
-							North Habersharm Library<br>
-							<a href="">170 Oak Tree Lane<br>Habersham, GA 28347 <br></a>
-							1:30pm &ndash; 3:30pm
-						</p>
+					<div class="date">
+						<span class="day">20</span>
+						<span class="month">Jan</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">OBH Year 2 Kickoff</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Level Grove Media Center</span>
+							<span class="time"><i class="fa fa-clock-o"></i>12-1PM</span>
+						</div>
 					</div>
 				</li>
 				<li class="event">
-					<div class="event-inner">
-						<small>Dear Reader,</small>
-						<h2>You Are Invited</h2>
-						<p class="event-description">Come join us for a spirited reading of <em>Three Hens and a Peacock</em> at your local library. No one should miss out on the oppertunity to see this legendary storyteller in action. So come on down and join the party!</p>
-						<p class="event-details">
-							North Habersharm Library<br>
-							<a href="">170 Oak Tree Lane<br>Habersham, GA 28347 <br></a>
-							1:30pm &ndash; 3:30pm
-						</p>
+					<div class="date">
+						<span class="day">24</span>
+						<span class="month">Jan</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">Family OBH Event</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Clarkesville Library</span>
+							<span class="time"><i class="fa fa-clock-o"></i>12-1PM</span>
+						</div>
+					</div>
+				</li>
+				<li class="event">
+					<div class="date">
+						<span class="day">07</span>
+						<span class="month">Apr</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">Reading &amp; Discussion</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Habersham Central High School</span>
+							<span class="time"><i class="fa fa-clock-o"></i>6-8PM</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="post-card private">
+				<div class="post-card-inner">
+					<h1>Private Events</h1>
+				</div>
+			</div>
+			<ul class="event-list">
+				<li class="event">
+					<div class="date">
+						<span class="day">28</span>
+						<span class="month">Jan</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">OBH Brief Presentation</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Habersham County Chamber of Commerce</span>
+						</div>
+					</div>
+				</li>
+				<li class="event">
+					<div class="date">
+						<span class="day">07</span>
+						<span class="month">Apr</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">Student Presentations</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Habersham Central High School</span>
+						</div>
+					</div>
+				</li>
+				<li class="event">
+					<div class="date">
+						<span class="day">08</span>
+						<span class="month">Apr</span>
+						<span class="year">2016</span>
+					</div>
+					<div class="event-info">
+						<h1 class="event-title">Student Presentations</h1>
+						<div class="details">
+							<span class="dest"><i class="fa fa-map-marker"></i>Habersham Central High School</span>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -216,21 +286,9 @@
 		<small class="author"><span>Leave us a note</span></small>
 		<div id="disqus_thread"></div>
 		<script>
-		/**
-		* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-		*/
-		/*
-		var disqus_config = function () {
-		this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		};
-		*/
 		(function() { // DON'T EDIT BELOW THIS LINE
 		var d = document, s = d.createElement('script');
-
 		s.src = '//onebookhabersham.disqus.com/embed.js';
-
 		s.setAttribute('data-timestamp', +new Date());
 		(d.head || d.body).appendChild(s);
 		})();
