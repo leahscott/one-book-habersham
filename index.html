@@ -67,7 +67,7 @@
 			</div>
 		</div>
 		<!-- <a href="#" class="past-years btn">See Past Years <i class="fa fa-arrow-right"></i></a> -->
-		<section class="book-cta">
+		<section class="cta book-cta">
 			<h2>Where Can I Find It?</h2>
 			<p>Books are available throughout the community for you to read.  Public libraries and schools will have copies for lending.  Look for them is banks, restaurants, businesses, and other places where people gather.  Read a copy, share it with a friend, talk about it with your neighbors, and help us build community through this story.</p>
 		</section>
@@ -140,40 +140,58 @@
 		</h1>
 		<small class="author"><span>A round of applause for:</span></small>
 		<div class="content-row">
-			<ul class="sponsor-list">
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Habersham School System</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Volunteers for Literacy</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Habersham County Libraries</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Piedmont College</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Bluegraphics</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Peachtree Publishers</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Now Habersham</span>
-				</li>
-				<li class="sponsor">
-					<i class="fa fa-certificate"></i>
-					<span>Scholastic</span>
-				</li>
-			</ul>
+			<div class="row">
+				<div class="col-1of2">
+					<h1 class="sponsor-title">Organizations:</h1>
+					<ul class="sponsor-list">
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Habersham School System</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Volunteers for Literacy Habersham</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Piedmont College School of Education</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Habersham County Libraries</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-1of2">
+					<h1 class="sponsor-title">Partners:</h1>
+					<ul class="sponsor-list">
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Now Habersham</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Bluegraphics</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Peachtree Publishers</span>
+						</li>
+						<li class="sponsor">
+							<i class="fa fa-certificate"></i>
+							<span>Tome Society of Habersham Centra</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="cta sponsors-cta">
+				<h2>Interested in Being a Sponsor?</h2>
+				<div class="button-row">
+					<a href="mailto:helenobrien@habershamschools.com " class="btn"><i class="fa fa-envelope"></i>Helen O'Brien</a>
+					<span class="or">Or</span>
+					<a href="mailto:literacy1@windstream.net" class="btn"><i class="fa fa-envelope"></i>Phylecia Wilson</a>
+				</div>
+			</section>
 		</div>
 
 </section>
@@ -184,7 +202,7 @@
 			What are people
 			<strong>Tweeting?</strong>
 		</h1>
-		<small class="author"><span>#onebookhabersham</span></small>
+		<small class="author"><span>#onebookhab</span></small>
 		<div id="twitter-container"></div>
 	</div>
 </section>
@@ -198,10 +216,20 @@
 		<small class="author"><span>Leave us a note</span></small>
 		<div id="disqus_thread"></div>
 		<script>
+		/**
+		* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+		*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
 		(function() { // DON'T EDIT BELOW THIS LINE
 		var d = document, s = d.createElement('script');
 
-		s.src = '//greenhouse-staging.disqus.com/embed.js';
+		s.src = '//onebookhabersham.disqus.com/embed.js';
 
 		s.setAttribute('data-timestamp', +new Date());
 		(d.head || d.body).appendChild(s);
